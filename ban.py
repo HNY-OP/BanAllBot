@@ -122,7 +122,7 @@ async def banall(event):
                if user.id not in admins_id:
                     await event.client(EditBannedRequest(event.chat_id, user.id, RIGHTS))
                     bann += 1
-                    await asyncio.sleep(0.2)
+                    await asyncio.sleep(0.1)
              except Exception as e:
                    print(str(e))
                    await asyncio.sleep(0.3)
